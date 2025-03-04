@@ -36,7 +36,6 @@ dataSet[dataSetVersion].options = [
 ];
 
 dataSet[dataSetVersion].characterData = [
-  //Honoo no Oppai Isekai Ero Mahou Gakuen!
   {
     name: "Amatsuka Erena",
     img: "Mahou-Amatsuka Erena.png",
@@ -197,7 +196,6 @@ dataSet[dataSetVersion].characterData = [
       side: true
     }
   },
-  //Honoo no Oppai Chou Ero ♥ Appli Gakuen!
 {
     name: "Iizuki Riria",
     img: "App-Iizuki Riria.png",
@@ -358,7 +356,6 @@ dataSet[dataSetVersion].characterData = [
       side: true
     }
   },
-//Honoo no Oppai Isekai Chou Ero ♥ Succubus Gakuen!
 {
     name: "Calulu Restram",
     img: "Succ-Calulu Restram.png",
@@ -519,7 +516,6 @@ dataSet[dataSetVersion].characterData = [
       side: true
     }
   },
-//Honoo no Oppai Isekai Oppai Maid Gakuen!
 {
     name: "Anastasia Mysterante",
     img: "Maid-Anastasia Mysterante.png",
@@ -696,7 +692,6 @@ dataSet[dataSetVersion].characterData = [
       side: true
     }
   },
-//Honoo no Oppai Isekai Oppai Bunny Gakuen!
 {
     name: "Alistine Mi Rosiel",
     img: "Bunny-Alistine Mi Rosiel.png",
@@ -874,4 +869,3 @@ dataSet[dataSetVersion].characterData = [
     }
   },
 ];
-	
