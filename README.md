@@ -1,3 +1,6 @@
+# charasort-bluearchive
+A web based character sorter for Milk Factory Based on [charasort](https://github.com/execfera/charasort) by execfera. 
+
 # charasort
 A web based character sorter. Allows users to run through a manual merge sort of their favorite
 characters from a set.
@@ -8,8 +11,7 @@ characters from a set.
  * Shareable links of sorter results.
  * Versioning of sorter data - you may want to add characters and resources over time. Versioning keeps shareable links valid even if the base character data is changed.
  
-The version in this repo is built for characters from the [Touhou Project](https://en.wikipedia.org/wiki/Touhou_Project)
-game series, but the sorter can be easily edited to create any custom sorter desired.
+The version in this repo is built for characters from the [Milk Factory Games](https://en.wikipedia.org/wiki/Touhou_Project](https://milkfactory.jp/)), but the sorter can be easily edited to create any custom sorter desired.
 
 ## Related Sorters
 Several others have created other sorters based on other concepts and series, see them [here](https://github.com/execfera/charasort/wiki)!
