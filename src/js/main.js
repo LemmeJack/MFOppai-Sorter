@@ -60,7 +60,7 @@ function init() {
   /** Define button behavior. */
   document.querySelector('.starting.start.button').addEventListener('click', start);
   document.querySelector('.starting.load.button').addEventListener('click', loadProgress);
-  document.querySelector('.starting.contract.button').addEventListener('click', toggleExpandWaifus);
+  document.querySelector('.starting.contract.button').addEventListener('click', toggleContractWaifus);
 
   document.querySelector('.left.sort.image').addEventListener('click', () => pick('left'));
   document.querySelector('.right.sort.image').addEventListener('click', () => pick('right'));
@@ -642,7 +642,7 @@ function generateTextList() {
 }
 
 function generateSavedata() {
-  const saveData = `${timeError?'|':''}${timestamp}|${timeTaken}|${choices}|${expand}|${optStr}${suboptStr}`;
+  const saveData = `${timeError?'|':''}${timestamp}|${timeTaken}|${choices}|${contract}|${optStr}${suboptStr}`;
   return LZString.compressToEncodedURIComponent(saveData);
 }
 
