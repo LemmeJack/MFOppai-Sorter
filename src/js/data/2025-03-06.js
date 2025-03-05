@@ -1,4 +1,4 @@
-dataSetVersion = "2025-03-04"; // Change this when creating a new data set version. YYYY-MM-DD format.
+dataSetVersion = "2025-03-06"; // Change this when creating a new data set version. YYYY-MM-DD format.
 dataSet[dataSetVersion] = {};
 
 dataSet[dataSetVersion].options = [
@@ -32,6 +32,12 @@ dataSet[dataSetVersion].options = [
     key: "side",
     tooltip: "Check this to remove Side Heroines.",
     checked: false
+  },
+   {
+    name: "Filter Alternate Heroines",
+    key: "alternate",
+    tooltip: "Check this to filter alternate duplicates.",
+    checked: true
   }
 ];
 
@@ -114,6 +120,14 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       game: ["mahou"],
       main: true
+    }
+  },
+  {
+    name: "Yukinokouji Mizore (Adult Mode)",
+    img: "Mahou-Yukinokouji Mizore (Adult Mode).png",
+    opts: {
+      game: ["mahou"],
+      alternate: true
     }
   },
   {
@@ -250,6 +264,14 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       game: ["appli"],
       main: true
+    }
+  },
+  {
+    name: "Nanoka",
+    img: "App-Nanoka.png",
+    opts: {
+      game: ["appli"],
+      alternate: true
     }
   },
   {
