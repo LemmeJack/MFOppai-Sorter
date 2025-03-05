@@ -14,8 +14,9 @@ let optTaken  = [];             // Records which options are set.
 let timestamp = 0;        // savedata[0]      (Unix time when sorter was started, used as initial PRNG seed and in dataset selection)
 let timeTaken = 0;        // savedata[1]      (Number of ms elapsed when sorter ends, used as end-of-sort flag and in filename generation)
 let choices   = '';       // savedata[2]      (String of '0', '1' and '2' that records what sorter choices are made)
-let optStr    = '';       // savedata[3]      (String of '0' and '1' that denotes top-level option selection)
-let suboptStr = '';       // savedata[4...n]  (String of '0' and '1' that denotes nested option selection, separated by '|')
+let contract  = false;    // savedata[3]
+let optStr    = '';       // savedata[4]      (String of '0' and '1' that denotes top-level option selection)
+let suboptStr = '';       // savedata[5...n]  (String of '0' and '1' that denotes nested option selection, separated by '|')
 let timeError = false;    // Shifts entire savedata array to the right by 1 and adds an empty element at savedata[0] if true.
 
 /** Intermediate sorter data. */
@@ -59,6 +60,7 @@ function init() {
   /** Define button behavior. */
   document.querySelector('.starting.start.button').addEventListener('click', start);
   document.querySelector('.starting.load.button').addEventListener('click', loadProgress);
+  document.querySelector('.starting.contract.button').addEventListener('click', toggleExpandWaifus);
 
   document.querySelector('.left.sort.image').addEventListener('click', () => pick('left'));
   document.querySelector('.right.sort.image').addEventListener('click', () => pick('right'));
@@ -74,7 +76,7 @@ function init() {
   document.querySelector('.clearsave').addEventListener('click', clearProgress);
 
   /** Define keyboard controls (up/down/left/right vimlike k/j/h/l). */
-  document.addEventListener('keypress', (ev) => {
+  document.addEventListener('keydown', (ev) => {
     /** If sorting is in progress. */
     if (timestamp && !timeTaken && !loading && choices.length === battleNo - 1) {
       switch(ev.key) {
@@ -292,8 +294,6 @@ function display() {
   document.querySelector('.left.sort.image').src = leftChar.img;
   document.querySelector('.right.sort.image').src = rightChar.img;
 
-  
-
   document.querySelector('.left.sort.text').innerHTML = charNameDisp(leftChar.name);
   document.querySelector('.right.sort.text').innerHTML = charNameDisp(rightChar.name);
 
@@ -478,8 +478,8 @@ function result(imageNum = 5) {
   document.querySelector('.options').style.display = 'none';
   document.querySelector('.info').style.display = 'none';
 
-  const header = '<div class="result head"><div class="left">#</div><div class="right">Name</div></div>';
-  const timeStr = `This sorter was completed on ${new Date(timestamp + timeTaken).toString()} and took ${msToReadableTime(timeTaken)}. <br><br> <a class="restart-button" href="${location.protocol}//${sorterURL}">Do another sorter</a>`;
+  const header = '<div class="result head"><div class="left">Order</div><div class="right">Name</div></div>';
+  const timeStr = `This sorter was completed on ${new Date(timestamp + timeTaken).toString()} and took ${msToReadableTime(timeTaken)}. <a href="${location.protocol}//${sorterURL}">Do another sorter?</a>`;
   const imgRes = (char, num) => {
     const charName = reduceTextWidth(char.name, 'Arial 12px', 160);
     const charTooltip = char.name !== charName ? char.name : '';
@@ -574,6 +574,27 @@ function loadProgress() {
   if (saveData) decodeQuery(saveData);
 }
 
+
+function toggleContractWaifus() {
+  contract = !contract;
+  contractWaifus();
+}
+
+function contractWaifus() {
+  if (contract) {
+    document.querySelector('.left.sort.image').style.height = "180px";
+    document.querySelector('.left.sort.image').src = "src/assets/BannerL_contract.png";
+    document.querySelector('.right.sort.image').style.height = "180px";
+    document.querySelector('.right.sort.image').src = "src/assets/BannerR_contract.png";
+  }
+  else {
+    document.querySelector('.left.sort.image').style.height = "385px";
+    document.querySelector('.left.sort.image').src = "src/assets/BannerL.png";
+    document.querySelector('.right.sort.image').style.height = "385px";
+    document.querySelector('.right.sort.image').src = "src/assets/BannerR.png";
+  }
+}
+
 /** 
  * Clear progress from local browser storage.
 */
@@ -621,7 +642,7 @@ function generateTextList() {
 }
 
 function generateSavedata() {
-  const saveData = `${timeError?'|':''}${timestamp}|${timeTaken}|${choices}|${optStr}${suboptStr}`;
+  const saveData = `${timeError?'|':''}${timestamp}|${timeTaken}|${choices}|${expand}|${optStr}${suboptStr}`;
   return LZString.compressToEncodedURIComponent(saveData);
 }
 
@@ -631,6 +652,7 @@ function setLatestDataset() {
   timestamp = 0;
   timeTaken = 0;
   choices   = '';
+  contract  = false;
 
   const latestDateIndex = Object.keys(dataSet)
     .map(date => new Date(date))
@@ -699,9 +721,12 @@ function decodeQuery(queryString = window.location.search.slice(1)) {
       timeError = true;
     }
 
+    console.log(decoded);
+
     timestamp = Number(decoded.splice(0, 1)[0]);
     timeTaken = Number(decoded.splice(0, 1)[0]);
     choices   = decoded.splice(0, 1)[0];
+    contract    = decoded.splice(0,1)[0] === "true" ? true : false;
 
     const optDecoded    = decoded.splice(0, 1)[0];
     const suboptDecoded = decoded.slice(0);
@@ -750,6 +775,8 @@ function decodeQuery(queryString = window.location.search.slice(1)) {
       } else { document.getElementById(`cb-${opt.key}`).checked = optDecoded[index] === '1'; }
     });
 
+    contractWaifus();
+
     successfulLoad = true;
   } catch (err) {
     console.error(`Error loading shareable link: ${err}`);
@@ -780,7 +807,12 @@ function preloadImages() {
   };
 
   return Promise.all(characterDataToSort.map(async (char, idx) => {
-    characterDataToSort[idx].img = await loadImage(imageRoot + char.img);
+    if (contract == true) {
+      characterDataToSort[idx].img = await loadImage(imageRootContract + char.img);
+    }
+    else {
+      characterDataToSort[idx].img = await loadImage(imageRoot + char.img);
+    }
   }));
 }
 
