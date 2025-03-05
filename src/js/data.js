@@ -20,4 +20,5 @@ let dataSetVersion = '';
 /**
  * Image root, will be appended to the start of every image URL.
  */
-const imageRoot = 'chara/';
+const imageRoot = 'src/assets/charas';
+const imageRootContract = 'src/assets/charas_down';
