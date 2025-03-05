@@ -60,7 +60,7 @@ function init() {
   /** Define button behavior. */
   document.querySelector('.starting.start.button').addEventListener('click', start);
   document.querySelector('.starting.load.button').addEventListener('click', loadProgress);
-  document.querySelector('.starting.contract.button').addEventListener('click', toggleContractWaifus);
+  document.querySelector('.starting.expand.button').addEventListener('click', toggleContractWaifus);
 
   document.querySelector('.left.sort.image').addEventListener('click', () => pick('left'));
   document.querySelector('.right.sort.image').addEventListener('click', () => pick('right'));
