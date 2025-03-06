@@ -21,7 +21,7 @@ body {
 .progressbar {
   position: relative;
   width: 100%;
-  border: 1px solid black;
+  border: 1px #79047a;
   padding: 3px 0;
   margin: 2px 0px;
 }
@@ -49,7 +49,7 @@ body {
 }
 
 .button {
-  border: 1px solid black;
+  border: 1px #79047a;
   text-align: center;
   padding: 10%;
   grid-column: 2 / 3;
@@ -83,7 +83,7 @@ body {
   width: 25px;
   height: 25px;
   margin: 50px auto;
-  background-color: #333;
+  background-color: #79047a;
 
   border-radius: 100%;  
   -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
@@ -141,12 +141,12 @@ body {
 
 .sorter > .left {
   grid-column: 1 / 2;
-  border: 1px solid #000000;
+  border: 1px solid #79047a;
 }
 
 .sorter > .right {
   grid-column: 3 / 4;
-  border: 1px solid #000000;
+  border: 1px solid #79047a;
 }
 
 .options {
@@ -220,7 +220,7 @@ label:hover {
   display: grid;
   width: 211px;
   grid-template-columns: repeat(2, 1fr);
-  border: 1px solid #000;
+  border: 1px solid #79047a;
   margin-right: 5px;
 }
 
