@@ -227,7 +227,7 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "Kuromorihime Akane",
+    name: "Kuromorihime Akira",
     img: "App-Kuromorihime Akane.png",
     opts: {
       game: ["appli"],
