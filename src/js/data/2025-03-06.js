@@ -8,11 +8,11 @@ dataSet[dataSetVersion].options = [
     tooltip: "Check this to restrict characters from certain school.",
     checked: false,
     sub: [
-      { name: "Honoo no Oppai Isekai Ero Mahou Gakuen!", key: "mahou" },
-      { name: "Honoo no Oppai Chou Ero ♥ Appli Gakuen!", key: "appli" },
-      { name: "Honoo no Oppai Isekai Chou Ero ♥ Succubus Gakuen!", key: "succubus" },
-      { name: "Honoo no Oppai Isekai Oppai Maid Gakuen!", key: "maid" },
-      { name: "Honoo no Oppai Isekai Oppai Bunny Gakuen!", key: "bunny" },
+      { name: "Motto! Haramase! Honoo no Oppai Isekai Ero Mahou Gakuen!", key: "mahou" },
+      { name: "Motto! Haramase! Honoo no Oppai Chou Ero ♥ Appli Gakuen!", key: "appli" },
+      { name: "Motto! Haramase! Honoo no Oppai Isekai Chou Ero ♥ Succubus Gakuen!", key: "succubus" },
+      { name: "Motto! Haramase! Honoo no Oppai Isekai Oppai Maid Gakuen!", key: "maid" },
+      { name: "Motto! Haramase! Honoo no Oppai Isekai Oppai Bunny Gakuen!", key: "bunny" },
     ]
   },
   {
