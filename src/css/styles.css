@@ -49,7 +49,7 @@ body {
 }
 
 .button {
-  border: 1px #79047a;
+  border: 1px #141414;
   text-align: center;
   padding: 10%;
   grid-column: 2 / 3;
@@ -83,7 +83,7 @@ body {
   width: 25px;
   height: 25px;
   margin: 50px auto;
-  background-color: #79047a;
+  background-color: #141414;
 
   border-radius: 100%;  
   -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
