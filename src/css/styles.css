@@ -49,7 +49,7 @@ body {
 }
 
 .button {
-  border: 1px #79047a;
+  border: 1px solid black;
   text-align: center;
   padding: 10%;
   grid-column: 2 / 3;
