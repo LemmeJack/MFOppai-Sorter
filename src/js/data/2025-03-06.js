@@ -667,7 +667,7 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "Maid-Lunalilia Loveknot",
+    name: "Lunalilia Loveknot",
     img: "Maid-Lunalilia Loveknot.png",
     opts: {
       game: ["maid"],
@@ -843,7 +843,7 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "Maid-Lumiera Lil Earthian",
+    name: "Lumiera Lil Earthian",
     img: "Bunny-Lumiera Lil Earthian.png",
     opts: {
       game: ["bunny"],
