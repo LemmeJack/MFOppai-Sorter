@@ -5,14 +5,14 @@ dataSet[dataSetVersion].options = [
   {
     name: "Filter by Game Title",
     key: "game",
-    tooltip: "Check this to restrict characters from certain school.",
+    tooltip: "Check this to restrict characters from certain games.",
     checked: false,
     sub: [
-      { name: "Motto! Haramase! Honoo no Oppai Isekai Ero Mahou Gakuen!", key: "mahou" },
-      { name: "Motto! Haramase! Honoo no Oppai Chou Ero ♥ Appli Gakuen!", key: "appli" },
-      { name: "Motto! Haramase! Honoo no Oppai Isekai Chou Ero ♥ Succubus Gakuen!", key: "succubus" },
-      { name: "Motto! Haramase! Honoo no Oppai Isekai Oppai Maid Gakuen!", key: "maid" },
-      { name: "Motto! Haramase! Honoo no Oppai Isekai Oppai Bunny Gakuen!", key: "bunny" },
+      { name: "Oppai Isekai Ero Mahou Gakuen!", key: "mahou" },
+      { name: "Oppai Chou Ero ♥ Appli Gakuen!", key: "appli" },
+      { name: "Oppai Isekai Chou Ero ♥ Succubus Gakuen!", key: "succubus" },
+      { name: "Oppai Isekai Oppai Maid Gakuen!", key: "maid" },
+      { name: "Oppai Isekai Oppai Bunny Gakuen!", key: "bunny" },
     ]
   },
   {
