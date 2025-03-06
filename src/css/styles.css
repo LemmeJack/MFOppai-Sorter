@@ -21,7 +21,7 @@ body {
 .progressbar {
   position: relative;
   width: 100%;
-  border: 1px #79047a;
+  border: 1px purple;
   padding: 3px 0;
   margin: 2px 0px;
 }
