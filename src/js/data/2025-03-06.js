@@ -123,7 +123,7 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "Mizore (Adult)",
+    name: "Mizore (Adult Mode)",
     img: "Mahou-Yukinokouji Mizore (Adult Mode).png",
     opts: {
       game: ["mahou"],
