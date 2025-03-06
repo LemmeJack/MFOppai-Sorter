@@ -1,7 +1,7 @@
 # charasort-bluearchive
 A web based character sorter for Milk Factory Based on [charasort](https://github.com/execfera/charasort) by execfera. 
 
-https://lemmejack.github.io/Milk-Factory-Sorter/
+https://lemmejack.github.io/MFOppai-Sorter/
 
 # charasort
 A web based character sorter. Allows users to run through a manual merge sort of their favorite
