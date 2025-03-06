@@ -34,7 +34,7 @@ body {
 
 .progressfill {
   height: 20px;
-  background-color: #d049ff;
+  background-color: lightgreen;
   width: 0%;
 }
 
