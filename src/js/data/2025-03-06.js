@@ -123,7 +123,7 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "Yukinokouji Mizore (Adult Mode)",
+    name: "Mizore (Adult)",
     img: "Mahou-Yukinokouji Mizore (Adult Mode).png",
     opts: {
       game: ["mahou"],
@@ -547,7 +547,7 @@ dataSet[dataSetVersion].characterData = [
     }
   },
  {
-    name: "Anastasia Mysterante (Doppelganger)",
+    name: "Ana (Doppelganger)",
     img: "Maid-Anastasia Mysterante (Doppelganger).png",
     opts: {
       game: ["maid"],
