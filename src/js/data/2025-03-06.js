@@ -222,7 +222,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Jougasaki Rio",
     img: "App-Jougasaki Rio.png",
     opts: {
-      game: ["mahou"],
+      game: ["appli"],
       main: true
     }
   },
