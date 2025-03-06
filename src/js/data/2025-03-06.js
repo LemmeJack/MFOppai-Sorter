@@ -546,7 +546,15 @@ dataSet[dataSetVersion].characterData = [
       main: true
     }
   },
-  {
+ {
+    name: "Anastasia Mysterante (Doppelganger)",
+    img: "Maid-Anastasia Mysterante (Doppelganger).png",
+    opts: {
+      game: ["maid"],
+      alternate: true
+    }
+  },
+ {
     name: "Dyzenia Dracour",
     img: "Maid-Dyzenia Dracour.png",
     opts: {
