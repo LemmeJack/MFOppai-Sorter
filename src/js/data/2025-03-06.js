@@ -16,25 +16,25 @@ dataSet[dataSetVersion].options = [
     ]
   },
   {
-    name: "Filter Main Heroines",
+    name: "Disable Main Heroines",
     key: "main",
     tooltip: "Check this to remove Main Heroines.",
     checked: false
   },
   {
-    name: "Filter Mother Heroines",
+    name: "Disable Mother Heroines",
     key: "mother",
     tooltip: "Check this to remove Mother Heroines.",
     checked: false
   },
   {
-    name: "Filter Side Heroines",
+    name: "Disable Side Heroines",
     key: "side",
     tooltip: "Check this to remove Side Heroines.",
     checked: false
   },
    {
-    name: "Filter Alternate Heroines",
+    name: "Disable Alternate Heroines",
     key: "alternate",
     tooltip: "Check this to filter alternate duplicates.",
     checked: true
