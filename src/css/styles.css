@@ -83,7 +83,7 @@ body {
   width: 25px;
   height: 25px;
   margin: 50px auto;
-  background-color: #141414;
+  background-color: #333;
 
   border-radius: 100%;  
   -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
