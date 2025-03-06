@@ -582,15 +582,15 @@ function toggleContractWaifus() {
 
 function contractWaifus() {
   if (contract) {
-    document.querySelector('.left.sort.image').style.height = "1000px";
+    document.querySelector('.left.sort.image').style.height = "180px";
     document.querySelector('.left.sort.image').src = "src/assets/BannerL_contract.png";
-    document.querySelector('.right.sort.image').style.height = "1000px";
+    document.querySelector('.right.sort.image').style.height = "180px";
     document.querySelector('.right.sort.image').src = "src/assets/BannerR_contract.png";
   }
   else {
-    document.querySelector('.left.sort.image').style.height = "1000px";
+    document.querySelector('.left.sort.image').style.height = "385px";
     document.querySelector('.left.sort.image').src = "src/assets/BannerL.png";
-    document.querySelector('.right.sort.image').style.height = "1000px";
+    document.querySelector('.right.sort.image').style.height = "385px";
     document.querySelector('.right.sort.image').src = "src/assets/BannerR.png";
   }
 }
