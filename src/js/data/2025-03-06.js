@@ -835,8 +835,8 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "Laveze Le Nacuras",
-    img: "Bunny-Laveze Le Nacuras.png",
+    name: "Laveze La Nacuras",
+    img: "Bunny-Laveze La Nacuras.png",
     opts: {
       game: ["bunny"],
       mother: true
