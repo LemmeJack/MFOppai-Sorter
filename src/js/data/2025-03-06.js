@@ -754,6 +754,14 @@ dataSet[dataSetVersion].characterData = [
       main: true
     }
   },
+   {
+    name: "Giltia (B-Cup)",
+    img: "Bunny-Giltia (B-Cup).png",
+    opts: {
+      game: ["bunny"],
+      alternate: true
+    }
+  },
   {
     name: "Karla Lil Earthian",
     img: "Bunny-Karla Lil Earthian.png",
@@ -771,8 +779,8 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "Minya Prenavas8102",
-    img: "Bunny-Minya Prenavas8102.png",
+    name: "Miinya Prenavas8102",
+    img: "Bunny-Miinya Prenavas8102.png",
     opts: {
       game: ["bunny"],
       main: true
@@ -893,6 +901,14 @@ dataSet[dataSetVersion].characterData = [
 {
     name: "Maginabeige Blume",
     img: "Bunny-Maginabeige Blume.png",
+    opts: {
+      game: ["bunny"],
+      side: true
+    }
+  },
+{
+    name: "Chichino Kaori",
+    img: "Bunny-Chichino Kaori.png",
     opts: {
       game: ["bunny"],
       side: true
