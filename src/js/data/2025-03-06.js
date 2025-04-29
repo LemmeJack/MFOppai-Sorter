@@ -772,7 +772,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Meamea Fo Rusalka",
-    img: "Bunny-Meamea Fo Rusalka.png",
+    img: "Bunny-MeaMea Fo Rusalka.png",
     opts: {
       game: ["bunny"],
       main: true
