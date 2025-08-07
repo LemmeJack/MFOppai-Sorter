@@ -43,7 +43,7 @@ dataSet[dataSetVersion].options = [
 
 dataSet[dataSetVersion].characterData = [
   {
-    name: "Amatsuka Erena-天使 英玲奈",
+    name: "Amatsuka Erena",
     img: "Mahou-Amatsuka Erena.png",
     opts: {
       game: ["mahou"],
@@ -83,7 +83,7 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "Naomin Ibah Lucile-ナオミン=イヴァ=ルシル",
+    name: "Naomin Ibah Lucile",
     img: "Mahou-Naomin Ibah Lucile.png",
     opts: {
       game: ["mahou"],
@@ -91,7 +91,7 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "Olga-オルガ",
+    name: "Olga",
     img: "Mahou-Olga.png",
     opts: {
       game: ["mahou"],
