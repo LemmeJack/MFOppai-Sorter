@@ -43,7 +43,7 @@ dataSet[dataSetVersion].options = [
 
 dataSet[dataSetVersion].characterData = [
   {
-    name: "Amatsuka Erena",
+    name: "Erena [英玲奈]",
     img: "Mahou-Amatsuka Erena.png",
     opts: {
       game: ["mahou"],
