@@ -915,6 +915,14 @@ dataSet[dataSetVersion].characterData = [
       side: true
     }
   },
+{ 
+  name: "Claudia Orha Greywalk", 
+  img: "Spy-Claudia Orha Greywalk.png", 
+  opts: { 
+    game: ["spy"], 
+    main: true 
+  } 
+  },
 {
   name: "Erza Sarandel",
   img: "Spy-Erza Sarandel.png",
