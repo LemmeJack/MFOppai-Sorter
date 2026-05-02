@@ -916,8 +916,8 @@ dataSet[dataSetVersion].characterData = [
     }
   },
 {
-  name: "Ezra Sarandel",
-  img: "Spy-Ezra Sarandel.png",
+  name: "Erza Sarandel",
+  img: "Spy-Erza Sarandel.png",
   opts: {
     game: ["spy"],
     main: true
