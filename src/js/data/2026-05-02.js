@@ -14,7 +14,6 @@ dataSet[dataSetVersion].options = [
       { name: "Oppai Isekai Oppai Maid Gakuen!", key: "maid" },
       { name: "Oppai Isekai Oppai Bunny Gakuen!", key: "bunny" },
       { name: "Oppai Isekai Oppai Spy Gakuen!", key: "spy" },
-      { name: "Oppai Isekai Oppai Idol Gakuen!", key: "idol" },
     ]
   },
   {
